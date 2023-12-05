@@ -1,0 +1,109 @@
+
+         /* Resetten van de standaard stijlen */
+         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+         * {
+             font-family: Outfit;
+             /* Algemene instelling voor het lettertype van de hele pagina */
+         }
+ 
+         /* Stijlen voor de header */
+         body {
+             background-color: #464d50;
+             background-image:url(../images/zuiderveen\ achtergrond.png);
+             background-position: center;
+             background-attachment: fixed;
+             /* Achtergrondkleur van de pagina */
+         }
+         
+         header {
+             background-color: rgba(97, 92, 92, 0.5);
+             color: #fff;
+             padding: 20px;
+             text-align: center;
+             /* Stijlen voor de bovenste sectie van de pagina */
+         }
+         
+         h1 {
+             margin: 0;
+             font-size: 36px;
+             /* Opmaak voor de hoofdkop */
+         }
+ 
+         
+         nav a {
+             color: #fff;
+             text-decoration: none;
+             margin: 0 10px;
+             /* Opmaak voor de koppelingen in het navigatiemenu */
+         }
+         
+ 
+         /* Stijlen voor de hoofdcontainer */
+         .container {
+             max-width: 960px;
+             margin: 20px auto;
+             padding: 20px;
+             color: #fff;
+             background-color: rgba(97, 92, 92, 0.5);
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+             /* Opmaak voor de hoofdinhoudscontainer */
+         }
+ 
+         /* Stijlen voor de inhoudstekst */
+         .content {
+             font-size: 18px;
+             line-height: 1.6;
+             /* Opmaak voor de tekstinhoud van de pagina */
+         }
+ 
+         /* Stijlen voor de footer */
+         footer {
+            background-color: rgba(97, 92, 92, 0.5);
+             color: #fff;
+             text-align: center;
+             padding: 10px 0;
+             /* Opmaak voor de voettekst onderaan de pagina */
+         }
+ 
+         /* Video achtergrondstijlen */
+         #background-image {
+             position: fixed;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0;
+             z-index: -1;
+             /* Instellingen voor de eerste videoachtergrond */
+         }
+         
+         #background-image image {
+             position: fixed;
+             top: 40%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             min-width: 100%;
+             min-height: 100%;
+             width: auto;
+             height: auto;
+             /* Stijlen voor de eerste video op de achtergrond */
+         }
+
+         .lijntje {
+            text-decoration: none;
+            position: relative;
+          }
+          
+          .lijntje::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: width 1.5s;
+          }
+          
+          .lijntje:hover::before {
+            width: 100%;
+          }
